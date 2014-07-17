@@ -1,0 +1,17 @@
+Ddeboer\Salesforce\MapperBundle\Model\Lead:
+    properties:
+        firstName:
+            - NotBlank: ~
+            - Length:
+                max: 256
+        lastName:
+            - NotBlank: ~
+            - Length:
+                max: 256
+        email:
+            - NotBlank: ~
+            - Email: ~
+        company:
+            - NotBlank: ~
+            - Length:
+                max: 256

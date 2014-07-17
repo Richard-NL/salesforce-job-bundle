@@ -1,0 +1,24 @@
+rs_hoogstad_tulsie_slesforce_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: RsHoogstadTulsieSalesforceBundle:Default:index }
+
+_job:
+    resource: "@RsHoogstadSalesforceJobBundle/Controller/JobController.php"
+    type:     annotation
+    prefix:   /job
+
+_lead:
+    resource: "@RsHoogstadSalesforceJobBundle/Controller/LeadController.php"
+    type:     annotation
+    prefix:   /lead
+
+
+_lead_success:
+    pattern:  /lead/thankyou
+    defaults: { _controller: RsHoogstadTulsieSalesforceBundle:Lead:success}
+
+
+
+
+
+

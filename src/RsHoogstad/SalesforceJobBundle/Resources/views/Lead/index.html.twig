@@ -1,0 +1,14 @@
+{% extends "AcmeDemoBundle::layout.html.twig" %}
+
+{% block title "Symfony - Soap" %}
+
+{% block content_header '' %}
+
+{% block content %}
+    <h1 class="title">Create contact</h1>
+    {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+    {{ form_errors(form) }}
+    {{ form_end(form) }}
+
+{% endblock %}
+

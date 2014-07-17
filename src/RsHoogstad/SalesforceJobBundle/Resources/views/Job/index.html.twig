@@ -1,0 +1,15 @@
+{% extends "AcmeDemoBundle::layout.html.twig" %}
+
+{% block title "Symfony - Soap" %}
+
+{% block content_header '' %}
+
+{% block content %}
+    <h1 class="title">Do soap stuff</h1>
+    <ul id="navigation">
+        {% for job in result %}
+            <li><a href="{{ path('_job_detail', {id:job.id}) }}">{{ job.name }}</a></li>
+
+        {% endfor %}
+    </ul>
+{% endblock %}
