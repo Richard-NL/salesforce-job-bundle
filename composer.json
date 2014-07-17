@@ -1,3 +1,6 @@
 {
-    "name": "rshoogstad/salesforce-job-bundle"
+    "name": "rshoogstad/salesforce-job-bundle",
+    "autoload": {
+        "psr-0": { "RsHoogstad\\SalesforceJobBundle": "" }
+    },
 }
